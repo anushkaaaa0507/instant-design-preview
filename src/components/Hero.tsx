@@ -46,7 +46,7 @@ const Hero = () => {
             className="h-full bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-dark-purple/40 via-english-violet/20 to-dark-purple/50" />
+            <div className="absolute inset-0 bg-gradient-to-b from-sage-dark/40 via-sage-medium/20 to-sage-dark/50" />
           </div>
         </div>
       ))}
@@ -60,10 +60,10 @@ const Hero = () => {
             {slides[currentSlide].description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <button className="bg-thistle bg-opacity-80 text-english-violet px-8 py-4 rounded-xl hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 border border-thistle border-opacity-30 backdrop-blur-md font-light">
+            <button className="bg-sage-medium bg-opacity-80 text-sage-dark px-8 py-4 rounded-xl hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 border border-sage-medium border-opacity-30 backdrop-blur-md font-light">
               Explore Mood Boards
             </button>
-            <button className="bg-moonstone/90 backdrop-blur-md text-white px-8 py-4 rounded-xl hover:bg-moonstone transition-all duration-300 transform hover:scale-105 shadow-2xl font-light">
+            <button className="bg-warm-beige/90 backdrop-blur-md text-white px-8 py-4 rounded-xl hover:bg-warm-beige transition-all duration-300 transform hover:scale-105 shadow-2xl font-light">
               Start Your Design
             </button>
           </div>
@@ -72,14 +72,14 @@ const Hero = () => {
 
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-thistle bg-opacity-80 text-english-violet p-3 rounded-xl hover:bg-opacity-90 transition-all duration-300 border border-thistle border-opacity-30"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-sage-medium bg-opacity-80 text-sage-dark p-3 rounded-xl hover:bg-opacity-90 transition-all duration-300 border border-sage-medium border-opacity-30"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-thistle bg-opacity-80 text-english-violet p-3 rounded-xl hover:bg-opacity-90 transition-all duration-300 border border-thistle border-opacity-30"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-sage-medium bg-opacity-80 text-sage-dark p-3 rounded-xl hover:bg-opacity-90 transition-all duration-300 border border-sage-medium border-opacity-30"
       >
         <ChevronRight className="h-6 w-6" />
       </button>

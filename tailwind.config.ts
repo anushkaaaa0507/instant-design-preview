@@ -63,26 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom color palette
-				'lavender-web': '#DFD9E2',
-				'thistle': '#DACCE1',
-				'english-violet': '#443D52',
-				'dark-purple': '#292131',
-				'cool-gray': '#89909F',
-				'moonstone': '#76A4A7',
-				'mint-green': '#C2EBBD',
-				cream: {
-					50: '#FEFDF9',
-					100: '#FDF9F0',
-					200: '#FAF0E1',
-					300: '#F6E7D2',
-					400: '#F2DEC3',
-					500: '#EED5B4',
-					600: '#EACCA5',
-					700: '#E6C396',
-					800: '#E2BA87',
-					900: '#DEB178'
-				}
+				// New custom color palette
+				'sage-light': '#acb5b7',      // Primary background/light panels
+				'sage-dark': '#324b50',       // Dark text/headers
+				'sage-medium': '#95b0b6',     // Secondary elements/borders
+				'warm-beige': '#cbae9c',      // Accent/buttons
+				'warm-brown': '#947969',      // Success/CTA elements
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
