@@ -14,21 +14,21 @@ const DesignRequest = () => {
   ];
 
   return (
-    <section id="request" className="py-20 px-6 bg-gradient-to-b from-white to-purple-50">
+    <section id="request" className="py-20 px-6 bg-gradient-to-b from-lavender-web to-thistle">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-semibold text-dark-purple mb-4">
             Design Request Submission
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-cool-gray font-light">
             Tell us about your space and we'll match you with the perfect designer
           </p>
         </div>
 
-        <div className="bg-white bg-opacity-80 backdrop-blur-md rounded-2xl shadow-xl p-8">
+        <div className="bg-thistle bg-opacity-80 backdrop-blur-md rounded-xl shadow-xl p-8">
           <form className="space-y-8">
             <div>
-              <label className="block text-lg font-semibold text-gray-800 mb-4">
+              <label className="block text-lg font-semibold text-dark-purple mb-4">
                 Room Type
               </label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -37,10 +37,10 @@ const DesignRequest = () => {
                     key={room}
                     type="button"
                     onClick={() => setSelectedRoom(room)}
-                    className={`p-4 rounded-xl border-2 transition-all duration-300 ${
+                    className={`p-4 rounded-xl border-2 transition-all duration-300 font-light ${
                       selectedRoom === room
-                        ? "border-purple-500 bg-purple-50 text-purple-700"
-                        : "border-gray-200 hover:border-purple-300 text-gray-700"
+                        ? "border-moonstone bg-mint-green bg-opacity-30 text-dark-purple"
+                        : "border-thistle hover:border-moonstone text-english-violet"
                     }`}
                   >
                     {room}
@@ -50,7 +50,7 @@ const DesignRequest = () => {
             </div>
 
             <div>
-              <label className="block text-lg font-semibold text-gray-800 mb-4">
+              <label className="block text-lg font-semibold text-dark-purple mb-4">
                 Aesthetic Preference
               </label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -59,10 +59,10 @@ const DesignRequest = () => {
                     key={style}
                     type="button"
                     onClick={() => setSelectedStyle(style)}
-                    className={`p-4 rounded-xl border-2 transition-all duration-300 ${
+                    className={`p-4 rounded-xl border-2 transition-all duration-300 font-light ${
                       selectedStyle === style
-                        ? "border-purple-500 bg-purple-50 text-purple-700"
-                        : "border-gray-200 hover:border-purple-300 text-gray-700"
+                        ? "border-moonstone bg-mint-green bg-opacity-30 text-dark-purple"
+                        : "border-thistle hover:border-moonstone text-english-violet"
                     }`}
                   >
                     {style}
@@ -72,21 +72,21 @@ const DesignRequest = () => {
             </div>
 
             <div>
-              <label className="block text-lg font-semibold text-gray-800 mb-4">
+              <label className="block text-lg font-semibold text-dark-purple mb-4">
                 Additional Details
               </label>
               <textarea
                 rows={4}
                 placeholder="Tell us about your vision, budget, timeline, or any specific requirements..."
-                className="w-full p-4 rounded-xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none transition-colors duration-300 bg-white bg-opacity-60 backdrop-blur-sm"
+                className="w-full p-4 rounded-xl border-2 border-thistle focus:border-moonstone focus:outline-none transition-colors duration-300 bg-lavender-web bg-opacity-60 backdrop-blur-sm text-english-violet font-light"
               />
             </div>
 
-            <div className="bg-purple-50 p-6 rounded-xl">
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+            <div className="bg-lavender-web bg-opacity-60 p-6 rounded-xl">
+              <h3 className="text-lg font-semibold text-dark-purple mb-2">
                 What happens next?
               </h3>
-              <div className="space-y-2 text-gray-600">
+              <div className="space-y-2 text-cool-gray font-light">
                 <p>✨ Auto Designer Assignment - We'll match you with a perfect expert</p>
                 <p>📋 Initial Consultation - Quick call to understand your needs</p>
                 <p>🎨 Design Proposal - Receive your customized design plan</p>
@@ -96,7 +96,7 @@ const DesignRequest = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white py-4 rounded-xl text-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="w-full bg-gradient-to-r from-moonstone to-mint-green text-white py-4 rounded-xl text-lg font-light hover:from-mint-green hover:to-moonstone transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Submit Design Request
             </button>

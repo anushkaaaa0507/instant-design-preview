@@ -63,6 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				// Custom color palette
+				'lavender-web': '#DFD9E2',
+				'thistle': '#DACCE1',
+				'english-violet': '#443D52',
+				'dark-purple': '#292131',
+				'cool-gray': '#89909F',
+				'moonstone': '#76A4A7',
+				'mint-green': '#C2EBBD',
 				cream: {
 					50: '#FEFDF9',
 					100: '#FDF9F0',
