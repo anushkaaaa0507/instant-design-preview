@@ -3,20 +3,20 @@ const TrendingStyles = () => {
   const styles = [
     {
       title: "Modern Chic",
-      description: "Sleek lines with bold accents",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80",
+      description: "Sleek lines with bold accents and contemporary furniture",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       title: "Luxury Living", 
-      description: "Opulent textures and rich materials",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80",
+      description: "Opulent textures, rich materials, and sophisticated details",
+      image: "https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&w=800&q=80",
       gradient: "from-amber-500 to-orange-500",
     },
     {
       title: "Minimalist Comfort",
-      description: "Clean spaces with warm touches",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80",
+      description: "Clean spaces with warm touches and natural elements",
+      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
       gradient: "from-green-500 to-teal-500",
     },
   ];
@@ -37,25 +37,28 @@ const TrendingStyles = () => {
           {styles.map((style, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-white bg-opacity-80 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+              className="group relative overflow-hidden rounded-2xl glass shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 cursor-pointer"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img
                   src={style.image}
                   alt={style.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient} opacity-60 group-hover:opacity-70 transition-opacity duration-300`} />
+                <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient} opacity-40 group-hover:opacity-60 transition-opacity duration-300`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2 drop-shadow-lg">
+                    {style.title}
+                  </h3>
+                  <p className="text-sm opacity-90 drop-shadow-md">
+                    {style.description}
+                  </p>
+                </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  {style.title}
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  {style.description}
-                </p>
-                <button className="text-purple-600 hover:text-purple-700 font-medium transition-colors duration-300">
+                <button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white py-3 px-6 rounded-full hover:from-purple-700 hover:to-purple-800 transition-all duration-300 transform hover:scale-105 font-medium">
                   Explore Style →
                 </button>
               </div>
